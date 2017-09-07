@@ -62,3 +62,23 @@ git commit
 git reset HEAD <file> - откат измений, которые попали в индекс.
 
 git checkout -- <file> - откат изменений не проиндексированого файла.
+
+
+Ветвление
+
+git log --decorate --oneline - показываем куда указываются наши бренчи (в одну строку)
+
+git checkout - переключение на новую ветку ( переводим наш указатель HEAD на другу ветку)
+
+git branch -D - удаляет ветку
+-v - вывод веток с последним коммитом
+--merged - показывает ветки, которые не были слиты с
+-vv - позволяет просмотреть отслеживаемые ветки
+
+git push origin branch - отправляет локальную ветку на синхронизацию в удаленный репозиторий
+
+git push origin branch:asnewname - отправляет нашу ветку в ветку с другим названием
+
+git checkout -b new_branch origin/new_branch или git checkout --track origin/new_branch - позволяет сделать текущую ветку отслеживаемой на origin/
+
+git push origin --delete branch - удаляет ветку в удаленном репозитории
